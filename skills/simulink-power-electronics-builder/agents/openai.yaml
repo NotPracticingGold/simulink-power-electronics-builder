@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simulink Power Electronics Builder"
+  short_description: "安全构建、备份并验证 Simulink 电力电子模型"
+  default_prompt: "Use $simulink-power-electronics-builder to safely create or modify a MATLAB Simulink power-electronics model with backups and verification."

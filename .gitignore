@@ -1,0 +1,22 @@
+# MATLAB and Simulink generated files
+*.slx
+*.slxc
+*.mdl
+*.mat
+*.fig
+*.asv
+*.autosave
+slprj/
+sccprj/
+codegen/
+backups/
+
+# Publisher PDFs and local research material are intentionally excluded
+*.pdf
+
+# Local IDE and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
