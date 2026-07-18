@@ -30,9 +30,11 @@ if bdIsLoaded(modelName)
     end
 end
 
-safeReason = lower(regexprep(strtrim(reason), '[^A-Za-z0-9_-]+', '-'));
-safeReason = regexprep(safeReason, '^-+|-+$', '');
-safeReason = regexprep(safeReason, '^before[-_]+', '');
+% Keep the complete backup filename a valid MATLAB model identifier so a
+% backup can be copied back or opened directly for recovery verification.
+safeReason = lower(regexprep(strtrim(reason), '[^A-Za-z0-9]+', '_'));
+safeReason = regexprep(safeReason, '^_+|_+$', '');
+safeReason = regexprep(safeReason, '^before_+', '');
 if isempty(safeReason), safeReason = 'edit'; end
 stamp = char(datetime('now', 'Format', 'yyyyMMdd_HHmmss_SSS'));
 backupDir = fullfile(formalDir, 'backups', modelName);
