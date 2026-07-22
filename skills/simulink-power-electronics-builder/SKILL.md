@@ -62,6 +62,8 @@ Read `references/mcp-satk-workflow.md` whenever MCP/SATK is requested, considere
 
 Read `references/power-electronics-workflow.md` when reproducing a paper, tuning a controller, organizing control wiring, or generating waveform figures.
 
+Read `references/interleaved-iibbl-llc-notes.md` when building, repairing, or tuning an interleaved integrated Buck-Boost-LLC converter, especially ISOP 9 kW GaN models with a reused LLC primary bridge, four full-wave secondary rectifier cells, ZVS qualification, or loss breakdowns.
+
 ### 3. Build or modify
 
 - Prefer existing Simulink and Simscape Electrical components over MATLAB Function, S-Function, or custom masked blocks.
